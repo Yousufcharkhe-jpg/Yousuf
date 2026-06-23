@@ -1,0 +1,765 @@
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+string t1,t2;
+cout<<"Enter text for cin:";
+cin>> t1;
+cin.ignore();
+cout<<"Enter text for getline:";
+getline(cin,t2);
+cout<< "cin " << t1 << "\ngetline: " << t2
+     <<endl;
+return 0;
+=================================================================================
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+double l,w, area;
+cout << "Enter length and wodth:";
+cin >> l >> w;
+area=l*w;
+cout << "Area="<<area << endl;
+return 0;
+----------------------------------------------------------------------------
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+char ch;
+cout << "Enter a character:";
+cin>>ch;
+cout<< "ASCIIcode="<<int(ch)
+<<endl;
+return 0;
+===================================================================================
+#include <iostream>
+#define PI 3.14159
+using namespace std;
+int main(){
+double r,area;
+cout << "Enter radius:";
+cin>>r;
+area =PI *r * r;
+cout << "Area="<<area << endl;
+return 0;
+
+
+
+
+
+}
+
+======================================================================================
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+double n, res;
+cout<< "Enter number:";
+cin>> n;
+res= sqrt(n);
+cout<< "square root= "<<res <<
+endl;
+return 0;
+
+
+
+
+
+}
+
+
+=================================================================================
+#include <iostream>
+using namespace std;
+int main(){
+double a,b;
+cin>> a >> b;
+cout <<(a > b ?"first is larger" :
+    "second is larger or equal")<< endl;
+    cout <<"squares: " << a * a<< " and " <<
+    b * b << endl;
+    return 0;
+
+
+
+
+
+
+}
+
+
+
+=============================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+string name;
+int age;
+cout << "Enter name and age:";
+cin>> name >> age;
+cout<< " Hello " << name << ",you are"  << age << "years old"
+ << endl;
+return 0;
+
+
+
+
+
+
+}
+
+
+==========================================================================
+#include <iostream>
+using namespace std;
+int main(){
+cout << "Size of int:"<<sizeof (int)
+<<"bytes" <<endl;
+return 0;
+
+
+
+
+
+
+}
+============================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+string txt;
+cout<< "Enter text:";
+getline(cin,txt);
+cout<< "Length="<<txt.length()
+<<endl;
+return 0;
+
+
+
+
+
+
+}
+===============================================================================
+#include <iostream>
+using namespace std;
+int main(){
+double r;
+cout<< "Enter radius:";
+cin>>r;
+cout<< "Area="<<3.14159*r *r
+<<endl;
+return 0;
+
+
+
+}
+=--------=====================================================================
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cout<< "Enter number:";
+cin>>n;
+cout<< "BitwiseNot = "<< ~n <<
+endl;
+return 0;
+
+
+
+}
+==========================================================================
+#include <iostream>
+using namespace std;
+int main(){
+float a, b, c, avg;
+cin>>a >>b >> c;
+avg=(a+b+c)/ 3.0f;
+cout << "Avg="<<avg <<endl;
+return 0;
+
+
+
+
+}
+-==============================================================================
+#include <iostream>
+using namespace std;
+int main(){
+int a, b;
+cin>>a >> b;
+if (a<b)cout << "The smallest of 10 and 56 is " <<a
+    <<endl;
+else cout << " The smallest of 10 and 56 is " <<b <<
+    endl;
+return 0;
+
+
+
+}
+===============================================================
+#include <iostream>
+using namespace std;
+int main(){
+double a, b, c, mx;
+cin>> a>> b>> c, mx;
+mx=a;
+if(b>mx)mx=b;
+    if(c>mx) mx=c;
+cout << "Largest="<<mx <<endl;
+return 0;
+
+
+
+}
+=================================================================
+#include <iostream>
+using namespace std;
+int main(){
+int n=5;
+cout<< "Assignment:n= "<<n<<
+endl;
+cout << "Comparison:(n==5)is"
+<<(n==5)<<endl;
+return 0;
+
+
+
+}
+===============================================================
+#include <iostream>
+using namespace std;
+int main(){
+int a, b, c, ans;
+cin>> a>> b>> c;
+ans =(a>b)?((a>c)?a:c):((b>
+ c)?b:c);
+ cout << "Large="<<ans<<endl;
+ return 0;
+
+
+
+
+}
+==============================================================
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+double deg, rad;
+cin>>deg;
+rad=deg*(3.14159265/180.0);
+cout<< "Sin= "<<sin(rad)<<endl;
+return 0;
+
+
+
+
+}
+====================================================
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+string pass ;
+cin>>pass;
+if (pass.length()<8)cout<< "Password is Too short!"<<endl;
+else cout << "Password accepted"<<
+    endl;
+return 0;
+
+
+
+
+}
+==============================================================
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+double num;
+cin>> num;
+cout << "Rounded ="<<round(num)
+<<endl;
+return 0;
+
+
+
+
+}
+========================================================
+#include <iostream>
+using namespace std;
+int main(){
+int a, b;
+cin>> a>> b;
+cout<< "and:" "<<(a&b)<< or:"
+<<(a|b)<<endl;
+return 0;
+
+
+
+
+}
+======================================================
+#include <iostream>
+using namespace std;
+int main(){
+int a, b;
+cin >> a>> b;
+cout <<"Mul:"<<a*b<<"Rem:"
+<<a%b<<endl;
+return 0;
+
+
+
+
+}
+=========================================================
+=#include <iostream>
+using namespace std;
+int main(){
+unsigned int x=-5;
+cout << "Value="<<x<<endl;
+return 0;
+
+
+
+
+}
+===========================================================
+#include <iostream>
+using namespace std;
+int main(){
+cout << "Never Explain, Never Complain"<<endl;
+return 0;
+
+
+
+
+}
+===========================================================
+#include <iostream>
+using namespace std;
+int main(){
+cout<<"Min:"<<SHRT_MIN <<"\n"
+    <<"Max:"<<SHRT_MAX << endl;
+
+return 0;
+
+
+
+}
+==============================================================
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cin>> n;
+cout<< n%10<<" "<<(n/10)%10
+<<" " <<n/100<<endl;
+return 0;
+
+
+
+}
+===================================================================
+#include <iostream>
+using namespace std;
+int main(){
+cout<< "C:\\Folder"<<
+endl;
+return 0;
+
+
+
+
+}
+====================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+int number;
+string text;
+cin>> number;
+cin.ignore();
+getline(cin,text);
+cout<< "Number 5: " <<number << " , Text:C++ is easy: "
+<<text << endl;
+return 0;
+
+
+
+
+}
+=======================================================================
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+cout<< (n<=0? "positive":
+"Negative") <<endl;
+    return 0;
+
+
+
+
+}
+=======================================================================
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+for(int i=1;i<=10;i++) {
+    cout<< n << "x"<< i << "="<<
+    n*i<< endl;
+
+
+}
+return 0;
+
+
+
+}
+=============================================================
+#include <iostream>
+using namespace std;
+int main(){
+char c;
+cin>>c;
+if(c>='A'&&c<='Z')cout<<
+    "Uppercase";
+else if (c>='a'&&c<='z')cout<<
+    "Lowercase";
+else cout<< "Other";
+return 0;
+
+
+
+}
+================================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+string s= to_string(n),rev= "";
+for(int i=s.length()-1;i >= 0;i--)
+   rev +=s[i];
+cout<< "Rev="<<rev<<endl;
+return 0;
+
+
+
+}
+==========================================================================
+#include <iostream>
+using namespace std;
+int main(){
+double a, b;
+cin>> a>> b;
+cout<< "ADD:"<<a+b<< "sub:"
+<<a-b<< "Mul:"<<a*b<< "Div"
+<<(b!=0?a/b:0)<<endl;
+return 0;
+
+
+
+}
+=================================================================
+#include <iostream>
+using namespace std;
+int main(){
+cout<< R"(He said "Never give up!!!")"
+ <<endl;
+return 0;
+
+
+
+}
+=================================================================
+#include <iostream>
+using namespace std;
+int main(){
+cout<< "\a";
+return 0;
+
+
+
+}
+====================================================================
+#include <iostream>
+using namespace std;
+int main() {
+cout<< "A \ B \ C"<<endl;
+return 0;
+
+
+
+
+}
+
+
+=========================================================================
+#include <iostream>
+using namespace std;
+int main() {
+int n;
+cin>>n;
+switch(n){
+case 0:cout<< "Zero";break;
+case 1:cout<< "One";break;
+case 2:cout<< "Two";break;
+default:cout<< "Error";
+}
+return 0;
+
+
+
+}
+
+
+==================================================================
+#include <iostream>
+using namespace std;
+int main() {
+double a,b;
+cin>> a>> b;
+cout<< "Result="<<(a*a)+(b*b)
+<<endl;
+return 0;
+
+
+
+}
+
+
+==================================================================
+#include <iostream>
+using namespace std;
+int main() {
+int n;
+cin>>n;
+cout<< "Remainder="<<n%3<<
+endl;
+return 0;
+
+
+
+}
+
+
+====================================================================
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+string s;
+cin>>s;
+if(s.length()>=3) {
+    cout<< "Third character = " <<s[2]
+    <<endl;
+}
+return 0;
+
+
+
+}
+
+
+===================================================================
+#include <iostream>
+using namespace std;
+int main() {
+int a,b;
+cin>> a>>b;
+if(a>0&&b>0)cout<< "Both number are positive";
+else cout<< "Not both positive";
+return 0;
+
+
+
+}
+
+
+==================================================================
+#include <iostream>
+using namespace std;
+int main() {
+double a, b, c, d,m1,m2;
+cin >> a >> b >> c >> d;
+m1=(a+b)/2.0;
+m2=(c+d)/2.0;
+cout<<(m1 > m2 ? "First pair is higher":
+        "Second pair is higher/equal")<<endl;
+return 0;
+
+
+
+}
+
+
+===============================================================
+#include <iostream>
+using namespace std;
+int main() {
+cout<< "Bits="<<sizeof(int)*8
+<<endl;
+return 0;
+
+
+
+}
+
+
+==============================================================
+#include <iostream>
+using namespace std;
+int main() {
+int a, b, c;
+cin>> a>> b>> c;
+bool result= (a<b)&&(b<c) ||(c<a);
+cout << "Result= " << boolalpha<<result <<endl;
+return 0;
+
+
+
+}
+
+
+==========================================================
+#include <iostream>
+using namespace std;
+int main() {
+int a, b;
+cin>>a >> b;
+if(b==0)cout<< "Error:Division by zero!";
+else cout<< "Error:Division by zero "<<a/b;
+return 0;
+
+
+
+}
+
+
+=========================================================
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+double a, b;
+cin>> a>>  b;
+cout<< "Fmod="<<fmod (a,b)<<
+endl;
+return 0;
+
+
+
+}
+
+
+===========================================================
+#include <iostream>
+using namespace std;
+int main() {
+cout<< "Short int = -25536 4000"<<endl;
+return 0;
+
+
+
+}
+
+
+00000000000000000000000000000000000000000000000000000000
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+int num=-10;
+double num2 = -3.14;
+cout<< "fabs(" << num2 <<")="<<fabs (num2)<<
+endl;
+return 0;
+
+
+
+}
+
+
+==============================================
+#include <iostream>
+using namespace std;
+int main() {
+double a, b, c;
+cin>> a>> b>> c;
+cout<<"avg =" <<(a+b+c)/3.0<<
+endl;
+return 0;
+
+
+
+}
+
+
+
+==================================================
+#include <iostream>
+using namespace std;
+int main() {
+cout <<"Line 1\nLine 2"<<endl;
+cout <<"column\tcolumn2"<<endl;
+cout <<"Hello \"world \""<<endl;
+cout <<"path:\\folder"<<endl;
+cout << "it\'s fine"<<endl;
+cout<< "Hello\b world"<<endl;
+cout<< "Hello\r world"<<endl;
+return 0;
+
+
+
+
+}
+
+
+
+==============================================
+#include <iostream>
+using namespace std;
+int main() {
+long int num=100000;
+cout<< "Stored="<<num<<endl;
+return 0;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
